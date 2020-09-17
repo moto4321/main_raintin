@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>raintin</title>
+    <style>
+        #logo {
+            align-content: center;
+            background-color: rgb(201, 193, 193);
+            text-align: center;
+        }
+        #menu {
+            display: flex;
+            /* text-justify: auto; */
+            text-align: center;
+            height: 62px;
+        }
+        
+        #pc, #andr, #ios, #free {
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .pc a, .andr a, .ios a, .free  a {
+            color: rgb(73, 69, 69);
+        }
+        
+        /* #content {
+            height: 489px;
+        } */
+
+        body{
+            align-content: center;
+            width: 1080px;
+            background-color: rgb(201, 193, 193);
+            color: rgb(73, 69, 69);
+            margin: auto;
+            height: 720px;
+            font-family: 돋움체;
+        }
+        
+        #content .image {
+            margin: auto;
+            margin-right: 30px;
+        }
+
+        .text-block1 {
+            display: inline-block;
+            position: relative;
+            /* bottom: 457px; */
+            right: 932px;
+            background-color: rgb(201, 193, 193);
+            color: white;
+            top: -24px;
+            left: 82px;
+            line-height: 28px;
+            width: 73px;
+        }   
+        .text-block2 {
+            display: inline-block;
+            position: relative;
+            bottom: 457px;
+            right: 400px;
+            background-color: rgb(201, 193, 193);
+            color: white;
+            top: -24px;
+            left: 321px;
+            line-height: 28px;
+            width: 110px;
+        } 
+        .text-block3 {
+            display: inline-block;
+            position: relative;
+            bottom: 457px;
+            right: 932px;
+            background-color: rgb(201, 193, 193);
+            color: white;
+            top: -24px;
+            left: 597px;
+            line-height: 28px;
+            width: 73px;
+        } 
+        .hidden {
+            display: none;
+        }
+
+        #content .text-block1 a,
+        #content .text-block2 a,
+        #content .text-block3 a {
+            color: rgb(73, 69, 69);
+        }
+
+
+        #column {
+            display: flex;
+            /* margin: auto; */
+            top: 176px;
+            /* width: 400px; */
+            position: absolute;
+        }
+
+        #column img {
+            width: 248px;
+        }
+
+        .column {
+            width: 30px;
+        }
+
+        #content .text-block1 {
+            z-index: 1;
+        }
+        #content .text-block2 {
+            z-index: 1;
+        }
+        #content .text-block3 {
+            z-index: 1;
+        }
+        #column img {
+            z-index: 0;
+        }
+
+        #footer {
+            position: absolute;
+            width: 1080px;
+            height: 57px;
+            bottom: -0px;
+            background-color: rgb(73, 69, 69);
+            line-height: 5px;
+        }
+        footer {
+            /* text-align: center; */
+            /* bottom: 50px; */
+            position: absolute;
+            left: 331px;
+            top: 2px;
+            
+            color: rgb(201, 193, 193);
+        }
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <a href="/"><img src="../image/logo_transparent.png" height="100px"></a>
+    </div>
+    <div id="menu">
+        <div id="pc">
+            <h3 class="pc"><a href="/pc/pcview1">PC 뷰어</a></h3>
+        </div>
+        <div id="andr">
+            <h3 class="andr"><a href="/android/android1">Android 뷰어</a></h3>
+        </div>
+        <div id="ios">
+            <h3 class="ios"><a href="/ios/ios1">iOS 뷰어</a></h3>
+        </div>
+        <div id="free">
+            <h3 class="free"><a href="/freeware">열관류율(프리웨어)</a></h3>
+        </div>
+    </div>
+    <div id="level">
+        <div id="content">
+            <div class="text-block1 hidden">
+                <div class="dd"><a href="/pc/pcview1">1 채널</a></div>
+                <div class="2"><a href="/pc/pcview2">2 채널</a></div>
+                <div class="3"><a href="/pc/pcview3">3 채널</a></div>
+                <div class="4"><a href="/pc/pcviewmulti">다채널</a></div>
+            </div>
+            <div class="text-block2 hidden">
+                <div><a href="/android/android1">1 채널</a></div>
+                <div><a href="/android/android2">2 채널</a></div>
+                <div><a href="/android/androidmulti">다채널</a></div>
+            </div>
+            <div class="text-block3 hidden">
+                <div><a href="/ios/ios1">1 채널</a></div>
+                <div><a href="/ios/ios2">2 채널</a></div>
+            </div>
+        </div>
+        
+        <div id="column">
+            <img src="../image/android_345ch/1.png">
+            <div class="column"></div>
+            <img src="../image/android_345ch/2.png">
+            <div class="column"></div>
+            <img src="../image/android_345ch/3.png">
+            <div class="column"></div>
+            <img src="../image/android_345ch/3.png">
+        </div>
+    </div>
+    <div id="footer">
+        <footer>
+            <p>인천시 중구 중산동 1951-2 해이든영종 2005호(20층 5호)</p>
+            <p>Tel : 010-2629-2926  email : marekki@naver.com</p>
+        </footer>
+    </div>
+    <script src="../ddd.js"></script>
+</body>
+</html>
